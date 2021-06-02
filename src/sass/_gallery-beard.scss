@@ -1,0 +1,32 @@
+.gallery-set .gallery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 767px) {
+  .gallery-set .gallery-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .gallery-set > .gallery-set__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery-set > .gallery-set__item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}

@@ -1,0 +1,195 @@
+.contacts-section li {
+  list-style-type: none;
+}
+.online-booking_contacts {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    background-color: #191c26;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.contacts-section {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.8),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(../images/mobile/mobile-footer@1x.jpg);
+
+  @media screen and (min-width: $desktop) {
+    width: calc(#{$desktop} / 2);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.8),
+        rgba(25, 28, 38, 0.8)
+      ),
+      url(../images/mobile/mobile-footer@2x.jpg);
+  }
+  @media screen and (min-width: $mobile) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.8),
+        rgba(25, 28, 38, 0.8)
+      ),
+      url(../images/tablet/tablet-footer@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.8),
+          rgba(25, 28, 38, 0.8)
+        ),
+        url(../images/tablet/tablet-footer@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.8),
+        rgba(25, 28, 38, 0.8)
+      ),
+      url(../images/desktop/desktop-footer@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.8),
+          rgba(25, 28, 38, 0.8)
+        ),
+        url(../images/desktop/desktop-footer@2x.jpg);
+    }
+  }
+}
+
+.contacts {
+  @media screen and (min-width: $desktop) {
+    padding-left: 100px;
+  }
+}
+.primary-contacts-collecting-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin: -15px;
+
+    flex-direction: column;
+  }
+}
+
+.secondary-contacts-collecting-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+.adress-tel-mail-container {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 50%;
+  }
+}
+.work-time-container {
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+  }
+}
+
+.contacts-section .title-dark-fone {
+  margin: 0px;
+  margin-left: 15px;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+.adress-link,
+.tel-link,
+.email-link,
+.work-time-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67em;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.adress-link,
+.tel-link {
+  text-decoration: none;
+}
+.adress-link-container {
+  @media screen and (min-width: $tablet) {
+    width: 80%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+}
+.comma {
+  @media screen and (min-width: $tablet) {
+    opacity: 0;
+  }
+}
+.contacts-icon-map-pin,
+.contacts-icon-phone,
+.contacts-icon-mail {
+  position: absolute;
+  left: -40px;
+  fill: none;
+  width: 24px;
+  height: 24px;
+}
+.contacts-icon-map-pin {
+  @media screen and (min-width: $tablet) {
+    top: 6px;
+  }
+}
+
+.work-time-title {
+  display: flex;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 0px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  &::before {
+    background: rgba(157, 164, 189, 0.4);
+    @extend %before;
+  }
+}
+.adress-link {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.tel-link,
+.email-link {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.work-time-information {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
